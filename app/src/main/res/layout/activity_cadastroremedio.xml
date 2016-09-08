@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img_remedio"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/perfil"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/txt_remedionome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nome_remedio"
+                android:layout_below="@+id/img_remedio"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/edt_nomeremedio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_remedionome" />
+
+            <TextView
+                android:id="@+id/txt_tipo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo"
+                android:layout_below="@+id/edt_nomeremedio"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+
+            <CheckBox
+                android:id="@+id/ck_tomar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tomar"
+                android:layout_below="@+id/txt_tipo"/>
+
+            <CheckBox
+                android:id="@+id/ck_liquidi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Liquido"
+                android:layout_below="@+id/ck_tomar"/>
+
+            <CheckBox
+                android:id="@+id/ck_seringa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seringa"
+                android:layout_below="@+id/ck_liquidi"/>
+
+            <TextView
+                android:id="@+id/txt_controle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/controle"
+                android:layout_below="@+id/ck_seringa"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <CheckBox
+                android:id="@+id/ck_controle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Controlar estoque"
+                android:layout_below="@+id/txt_controle"/>
+
+            <TextView
+                android:id="@+id/txt_quantidade"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quantidade"
+                android:layout_below="@+id/ck_controle"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <CheckBox
+                android:id="@+id/ck_caixa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caixa"
+                android:layout_below="@+id/txt_quantidade"/>
+
+            <CheckBox
+                android:id="@+id/ck_cartela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pote"
+                android:layout_below="@+id/ck_caixa"/>
+
+            <Button
+                android:id="@+id/btn_salvar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/salvar"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ck_cartela"
+                android:layout_marginTop="20dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cancelar"
+                android:layout_toLeftOf="@+id/btn_salvar"
+                android:layout_alignTop="@id/btn_salvar"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@android:color/holo_blue_dark" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

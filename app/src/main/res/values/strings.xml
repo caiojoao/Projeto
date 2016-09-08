@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Do not Forget</string>
+    <string name="nome">Nome :</string>
+    <string name="idade">Idade :</string>
+    <string name="cad_perfil">Cadastrar Perfil</string>
+    <string name="ok">ok</string>
+    <string name="cancelar">cancelar</string>
+    <string name="amigo">Nome do Amigo :</string>
+    <string name="telefone">telefone</string>
+    <string name="salvar">salvar</string>
+    <string name="remedio">Remédio :</string>
+    <string name="dataini">Data Incial :</string>
+    <string name="datafinal">Data Final :</string>
+    <string name="nome_remedio">Nome do Remédio :</string>
+    <string name="quantidade">Quantidade :</string>
+    <string name="tipo">Tipo :</string>
+    <string name="controle">Deseja ter um controle de estoque :</string>
+    <string name="intervalo">Intervalor :</string>
+    <string name="nome_grafico1">Grafico 1</string>
+</resources>

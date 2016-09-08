@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img_perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/perfil"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/txt_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nome"
+                android:layout_alignBaseline="@+id/img_perfil"
+                android:labelFor="@+id/edt_nome"
+                android:textSize="20dp"
+                android:layout_marginTop="170dp"/>
+
+            <EditText
+                android:id="@+id/edt_nome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_nome"
+                android:layout_below="@+id/txt_nome"
+                android:inputType="textCapWords"
+                tools:ignore="RtlHardcoded"/>
+
+            <TextView
+                android:id="@+id/txt_idade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/idade"
+                android:layout_alignBaseline="@+id/img_perfil"
+                android:labelFor="@+id/edt_idade"
+                android:textSize="20dp"
+                android:layout_marginTop="240dp"/>
+
+
+            <EditText
+                android:id="@+id/edt_idade"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_idade"
+                android:layout_below="@+id/txt_idade"
+                android:inputType="textCapWords"
+                tools:ignore="LabelFor,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/txt_amigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amigo"
+                android:layout_alignBaseline="@+id/img_perfil"
+                android:labelFor="@+id/edt_amigo"
+                android:textSize="20dp"
+                android:layout_marginTop="320dp"/>
+
+            <EditText
+                android:id="@+id/edt_amigo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_amigo"
+                android:layout_below="@+id/txt_amigo"
+                android:inputType="textCapWords"
+                tools:ignore="LabelFor,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/txt_telefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone do Amigo :"
+                android:layout_alignBaseline="@+id/img_perfil"
+                android:textSize="20dp"
+                android:layout_marginTop="400dp"/>
+
+            <EditText
+                android:id="@+id/edt_telefone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_telefone"
+                android:layout_below="@+id/txt_telefone"
+                android:inputType="textCapWords"
+                tools:ignore="LabelFor,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email do médico :"
+                android:layout_alignBaseline="@+id/img_perfil"
+                android:textSize="20dp"
+                android:layout_marginTop="480dp"/>
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_email"
+                android:layout_below="@+id/txt_email"
+                android:inputType="textCapWords"
+                tools:ignore="LabelFor,RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/btn_salvar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/salvar"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/edt_email"
+                android:layout_marginTop="20dp"
+                tools:ignore="RtlHardcoded"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cancelar"
+                android:layout_toLeftOf="@+id/btn_salvar"
+                android:layout_alignTop="@id/btn_salvar"
+                tools:ignore="RtlHardcoded"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@android:color/holo_blue_dark" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

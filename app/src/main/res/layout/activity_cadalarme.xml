@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_remedio"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/perfil"
+            android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/txt_nomepac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nome"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/img_remedio"/>
+
+
+        <Spinner
+            android:id="@+id/sp_nomepac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignLeft="@+id/txt_nomepac"
+            android:layout_below="@+id/txt_nomepac"
+            android:inputType="textCapWords"
+            tools:ignore="LabelFor,RtlHardcoded"/>
+
+
+        <TextView
+            android:id="@+id/txt_nomeremedio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remedio"
+            android:textSize="20dp"
+            android:layout_alignLeft="@id/txt_nomepac"
+            android:layout_below="@+id/sp_nomepac"
+            android:layout_marginTop="20dp"/>
+
+        <Spinner
+            android:id="@+id/sp_nomeremedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignLeft="@+id/txt_nomeremedio"
+            android:layout_below="@+id/txt_nomeremedio"
+            android:inputType="textCapWords" />
+
+
+        <TextView
+            android:id="@+id/txt_DataIni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dataini"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/sp_nomeremedio"/>
+
+        <CalendarView
+            android:id="@+id/dt_ini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_DataIni"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/txt_DataFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/datafinal"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignLeft="@+id/dt_ini"
+            android:layout_below="@+id/dt_ini"/>
+
+        <CalendarView
+            android:id="@+id/dt_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_alignLeft="@+id/txt_DataFinal"
+            android:layout_below="@+id/dt_ini"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/txt_intervalor"
+            android:text="@string/intervalo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dt_final"
+            android:textSize="20dp"/>
+
+        <TimePicker
+            android:id="@+id/tp_intervalo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_intervalor"
+            android:layout_below="@+id/txt_intervalor"
+            android:timePickerMode="spinner" >
+
+
+        </TimePicker>
+
+        <Button
+            android:id="@+id/btn_salvarremedio"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/salvar"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tp_intervalo"
+            android:layout_marginTop="20dp"
+            tools:ignore="RtlHardcoded"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/btn_cancelar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelar"
+            android:layout_toLeftOf="@+id/btn_salvarremedio"
+            android:layout_alignTop="@id/btn_salvarremedio"
+            tools:ignore="RtlHardcoded"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@android:color/holo_blue_dark" />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

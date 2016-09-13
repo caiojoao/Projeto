@@ -16,7 +16,7 @@
 
     <ImageButton
         android:id="@+id/btn_perfil"
-        android:layout_width="195dp"
+        android:layout_width="190dp"
         android:layout_height="260dp"
         android:layout_gravity="left"
         android:src="@drawable/perfil"

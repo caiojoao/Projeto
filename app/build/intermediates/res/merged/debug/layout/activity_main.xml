@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageButton
+        android:id="@+id/btn_remedio"
+        android:layout_width="195dp"
+        android:layout_height="260dp"
+        android:layout_gravity="left"
+        android:layout_alignParentRight="true"
+        android:background="#3dff35"
+        android:src="@drawable/alarme"
+        android:scaleType ="fitCenter"/>
+
+    <ImageButton
+        android:id="@+id/btn_perfil"
+        android:layout_width="190dp"
+        android:layout_height="260dp"
+        android:layout_gravity="left"
+        android:src="@drawable/perfil"
+        android:scaleType ="fitCenter"
+        android:background="#f9861a" />
+
+    <ImageButton
+        android:id="@+id/btn_alarme"
+        android:layout_width="195dp"
+        android:layout_height="260dp"
+        android:layout_gravity="left"
+        android:layout_alignParentBottom="true"
+        android:background="#f70f0f"
+        android:src="@drawable/remedio"
+        android:scaleType ="fitCenter"/>
+
+    <ImageButton
+        android:id="@+id/btn_relatorio"
+        android:layout_width="195dp"
+        android:layout_height="260dp"
+        android:layout_gravity="left"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#2434e3"
+        android:src="@drawable/relatorio"
+        android:scaleType ="fitCenter"/>
+
+</RelativeLayout>

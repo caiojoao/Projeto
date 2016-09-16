@@ -1,0 +1,10 @@
+CHANGED,C:\Users\SirKarsh\Documents\Faculdade\TCC\Projeto\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\br\com\projeto\projeto\R$style$override.class
+CHANGED,C:\Users\SirKarsh\Documents\Faculdade\TCC\Projeto\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\br\com\projeto\projeto\R$drawable$override.class
+CHANGED,C:\Users\SirKarsh\Documents\Faculdade\TCC\Projeto\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\br\com\projeto\projeto\R$mipmap$override.class
+CHANGED,C:\Users\SirKarsh\Documents\Faculdade\TCC\Projeto\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\br\com\projeto\projeto\R$layout$override.class
+CHANGED,C:\Users\SirKarsh\Documents\Faculdade\TCC\Projeto\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\br\com\projeto\projeto\R$styleable$override.class
+CHANGED,C:\Users\SirKarsh\Documents\Faculdade\TCC\Projeto\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\br\com\projeto\projeto\R$id$override.class
+CHANGED,C:\Users\SirKarsh\Documents\Faculdade\TCC\Projeto\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\br\com\projeto\projeto\R$string$override.class
+CHANGED,C:\Users\SirKarsh\Documents\Faculdade\TCC\Projeto\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\android\support\v7\appcompat\R$drawable$override.class
+CHANGED,C:\Users\SirKarsh\Documents\Faculdade\TCC\Projeto\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\br\com\projeto\projeto\R$integer$override.class
+CHANGED,C:\Users\SirKarsh\Documents\Faculdade\TCC\Projeto\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
